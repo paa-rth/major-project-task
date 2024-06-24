@@ -9,32 +9,48 @@
     <div class="container">
         <h2>Vehicle Registration Form</h2>
         <form action="register.php" method="POST">
-            <div class="personal-info">
-                <h3>Personal Information</h3>
-                <label for="first_name">First Name:</label>
-                <input type="text" id="first_name" name="first_name" required><br>
-                <label for="last_name">Last Name:</label>
-                <input type="text" id="last_name" name="last_name" required><br>
-                <label for="dl_number">Driving Licence Number:</label>
-                <input type="text" id="dl_no" name="dl_no" required><br>
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" required><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
-            </div>
-            <div class="vehicle-info">
-                <h3>Vehicle Information</h3>
-                <label for="vehicle_make">Vehicle Make:</label>
-                <input type="text" id="vehicle_make" name="vehicle_make" required><br>
-                <label for="vehicle_model">Vehicle Model:</label>
-                <input type="text" id="vehicle_model" name="vehicle_model" required><br>
-                <label for="chassis_number">Chassis Number:</label>
-                <input type="text" id="ch_no" name="ch_no" required><br>
-                <label for="vehicle_color">Vehicle Color:</label>
-                <input type="text" id="vehicle_color" name="vehicle_color" required><br>
+            <div class="form-container">
+                <div class="personal-info">
+                    <h3>Personal Information</h3>
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name" required><br>
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" name="last_name" required><br>
+                    <label for="dl_no">Driving Licence Number:</label>
+                    <input type="text" id="dl_no" name="dl_no" required><br>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                </div>
+                <div class="vehicle-info">
+                    <h3>Vehicle Information</h3>
+                    <label for="vehicle_make">Vehicle Make:</label>
+                    <input type="text" id="vehicle_make" name="vehicle_make" required><br>
+                    <label for="vehicle_model">Vehicle Model:</label>
+                    <input type="text" id="vehicle_model" name="vehicle_model" required><br>
+                    <label for="ch_no">Chassis Number:</label>
+                    <input type="text" id="ch_no" name="ch_no" required><br>
+                    <label for="vehicle_color">Vehicle Color:</label>
+                    <input type="text" id="vehicle_color" name="vehicle_color" required><br>
+                    <label for="state_code">State Code:</label>
+                    <select id="state_code" name="state_code" required>
+                        <option value="">Select State</option>
+                        <option value="MH">Maharashtra</option>
+                        <option value="DL">Delhi</option>
+                        <!-- Add other state codes here -->
+                    </select><br>
+                    <label for="district_code">District Code:</label>
+                    <select id="district_code" name="district_code" required>
+                        <option value="">Select District</option>
+                    </select><br>
+                </div>
             </div>
             <input type="submit" value="Register Vehicle">
         </form>
+        <!-- Add the "Search Your Vehicle" button here -->
+        <a href="search.html" class="btn">Search Your Vehicle</a>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html>

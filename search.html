@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Registered Vehicles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Search Registered Vehicles</h2>
+        <form action="search_results.php" method="POST">
+            <label for="search_term">Enter Search Term:</label>
+            <input type="text" id="search_term" name="search_term" required>
+            <select id="search_type" name="search_type" required>
+                <option value="dl_no">Driving Licence Number</option>
+                <option value="phone">Phone Number</option>
+                <option value="email">Email</option>
+            </select><br>
+            <input type="submit" value="Search">
+        </form>
+    </div>
+</body>
+</html>
